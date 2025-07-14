@@ -1,0 +1,54 @@
+---
+title: "final map"
+output: word_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import libraries
+```{r }
+library(jsonlite)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(tidygeocoder)
+library(maps)
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
