@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+
+# Optional folders
+outputs/
+rsconnect/
+
+# RStudio files
+*.Rproj
+.Rhistory
+.RData
+.Ruserdata
+
+# Python cache
+__pycache__/
+*.pyc
+
