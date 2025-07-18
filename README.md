@@ -120,3 +120,15 @@ shiny::runApp("shiny_app/final_app.R")
 
 Once running, the map will open in your browser with an animated timeline of entity mentions by year (1607–1623). 
 
+
+---
+
+### If you read it this far, thank you so much! 
+
+<p align="center">
+  <img src="assets/cute_cat.jpg" alt="Cat" width="400"/>
+</p>
+
+
+
+
