@@ -1,0 +1,63 @@
+===========================================
+Shiny App Deployment Error Log and Fix Report
+===========================================
+
+Date: July 21, 2025
+Project: dataPlusv2 Shiny App
+User: izzi@s-MacBook-Air-3
+
+---
+
+I. Summary of Errors
+---------------------
+
+1. **JavaScript Error in Browser Console**
+
+    Message: 
+    Uncaught TypeError: Cannot set properties of null (setting 'href') at dataPlusv2/:40:47
+
+    Meaning: 
+    - A JavaScript script is trying to set the `.href` attribute of an HTML element by ID
+    - That element does not exist in the DOM, so it returns null
+
+2. **Shiny Server Error (shinyapps.io)**
+
+    Message in browser:
+    Failed to load resource: the server responded with a status of 500 ()
+
+    Message in deployment logs:
+    Error: Unhandled Exception: child_task=1570822042 child_task_status=error: Unhandled Exception: 599
+    Execution halted
+
+    Meaning: 
+    - The app failed during startup
+    - Possible causes include invalid file paths, unnecessary printing (`glimpse()`), or non-Shiny code blocks like `ggplot()` outside of `server()`
+
+---
+
+II. Debugging and Fixes
+------------------------
+
+1. **Removed non-portable path references**
+
+- Replaced 
+    ```r
+    read_csv("/Users/izzi/Desktop/...")
+    ```
+- With: 
+    ```r
+    read_csv("data/all_entities.csv")
+    ```
+
+2. **Removed live geocoding from app.R**
+- Removed:
+    ```r
+    geocode(..., method = "arcgis", ...)
+    ```
+- Added precomputed CSV instead:
+    ```r
+    read_csv("data/geocoded_locations.csv")
+    ```
+
+
+
