@@ -69,14 +69,22 @@ Features:
 
 ## Historical Timeline
 
-| VCR Section | Assigned Year | Justification                   |
-|-------------|---------------|----------------------------------|
-| Section 2   | 1607          | Jamestown founded               |
-| Section 3   | 1610          | De La Warr reoccupation         |
-| Section 4   | 1614          | Pocahontas–Rolfe marriage       |
-| Section 5   | 1617          | Tobacco boom begins             |
-| Section 6   | 1622          | Powhatan Uprising               |
-| Section 7   | 1623          | Aftermath documentation         |
+
+| VCR Section | Assigned Year | Justification                                                                            |
+| ----------- | ------------- | ---------------------------------------------------------------------------------------- |
+| Section 1   | 1606          | Royal Charter granted to Virginia Company; foundation of planning begins                 |
+| Section 2   | 1607          | Jamestown founded                                                                        |
+| Section 3   | 1610          | De La Warr reoccupation                                                                  |
+| Section 4   | 1614          | Pocahontas–Rolfe marriage                                                                |
+| Section 5   | 1617          | Tobacco boom begins                                                                      |
+| Section 6   | 1622          | Powhatan Uprising                                                                        |
+| Section 7   | 1623          | Aftermath documentation                                                                  |
+| Section 8   | 1622          | Legal disputes following 1622 uprising (e.g., Wye case; disrupted transport to Virginia) |
+| Section 9   | 1622          | Trade and military expeditions post-uprising; Hamor & Smith commissions                  |
+| Section 10  | 1623–1624     | Final legal defense of the Company before dissolution                                    |
+
+
+
 
 
 ## Setup Instructions
