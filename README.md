@@ -14,6 +14,9 @@ We explore how early colonial documents referenced space by:
 - Geocoding these places using the ArcGIS API
 - Visualizing the results via a **Shiny** app and **static maps**
 
+Here is the Shiny app website for the VCR locations extracted **only** with NER: 
+https://isabella-dataplus.shinyapps.io/dataPlusv2/
+
 
 ## Repository Structure
 
