@@ -3,7 +3,7 @@ library(leaflet)
 library(tidyverse)
 library(scales) 
 
-df <- read_csv("Map.csv") %>%
+df <- read_csv("/Users/yewonchang/cleanmap/Map.csv") %>%
   rename(
     LAT = DLATITUDE,
     LON = DLONGITUDE
