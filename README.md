@@ -1,4 +1,4 @@
-# ECBC-2025: Mapping the Virginia Company Records (1607–1623)
+# ECBC-2025: Mapping the Virginia Company Records (1606–1626)
 
 This project is a part of the **Data+ Summer Research Program** at Duke University. It involves building a structured data pipeline and interactive map to analyze place references across the *Virginia Company Records (VCR)* using OCR, Named Entity Recognition (NER), geocoding, and Shiny. 
 
@@ -16,6 +16,9 @@ We explore how early colonial documents referenced space by:
 
 Here is the Shiny app website for the VCR locations extracted **only** with NER: 
 https://isabella-dataplus.shinyapps.io/dataPlusv2/
+
+Here is the Shiny app website for the VCR locations extracted with **both** NER and regex: 
+https://yewonchang.shinyapps.io/manualmap/ 
 
 
 ## Repository Structure
