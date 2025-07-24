@@ -1,4 +1,4 @@
-# ECBC-2025: Mapping the Virginia Company Records (1606–1626)
+# ECBC 2025: Mapping the Virginia Company Records (1606–1626)
 
 This project is a part of the **Data+ Summer Research Program** at Duke University. It involves building a structured data pipeline and interactive map to analyze place references across the *Virginia Company Records (VCR)* using OCR, Named Entity Recognition (NER), geocoding, and Shiny. 
 
