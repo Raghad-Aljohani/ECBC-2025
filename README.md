@@ -1,6 +1,6 @@
 # ECBC 2025: Mapping the Records of the Virginia Company of London (1606–1626)
 
-This project is a part of the **Data+ Summer Research Program** at Duke University. It involves building a structured data pipeline and interactive map to analyze place references across *The Records of the Virginia Company of London* (VCR) using OCR, Named Entity Recognition (NER), regex, geocoding, and Shiny. 
+This project is a part of the **Data+ Program** at Duke University. It involves building a structured data pipeline and interactive map to analyze place references across *The Records of the Virginia Company of London* (VCR) using OCR, Named Entity Recognition (NER), regex, geocoding, and Shiny. 
 
 
 ***Contributors: Raghd Aljohani, Yewon Chang, Anya Deng, Isabella Xu***
