@@ -1,6 +1,6 @@
 # ECBC 2025: Mapping the Virginia Company Records (1606–1626)
 
-This project is a part of the **Data+ Summer Research Program** at Duke University. It involves building a structured data pipeline and interactive map to analyze place references across the *Virginia Company Records (VCR)* using OCR, Named Entity Recognition (NER), regex,  geocoding, and Shiny. 
+This project is a part of the **Data+ Summer Research Program** at Duke University. It involves building a structured data pipeline and interactive map to analyze place references across *The Records of the Virginia Company of London* (VCR) using OCR, Named Entity Recognition (NER), regex, geocoding, and Shiny. 
 
 
 ***Contributors: Raghd Aljohani, Yewon Chang, Anya Deng, Isabella Xu***
@@ -9,15 +9,17 @@ This project is a part of the **Data+ Summer Research Program** at Duke Universi
 ## Project Overview
 
 We explore how early colonial documents referenced space by:
-- Extracting geographic place names from VCR texts
-- Applying Named Entity Recognition to identify GPE (Geopolitical Entities) and LOC (Locations)
-- Geocoding these places using the ArcGIS API
+- Fine-tuning BART and GPT-4o on OCR'd pages of the VCR
+- Correcting OCR errors across the VCR pages with GPT-4o
+- Applying Named Entity Recognition (NER) to VCR texts to identify potential GPE (geopolitical entities) and LOC (location) entities
+- Manually validating and adding relevant (Virginian and other English colonial) entities to our NER output
+- Using regex to track the mention frequency of said place names throughout the text, accounting for historical spelling variations
 - Visualizing the results via a **Shiny** app and **static maps**
 
-Here is the Shiny app website for the VCR locations extracted **only** with NER: 
+Here is the Shiny app website for the VCR locations extracted **only** with NER (the "dirty" map): 
 https://isabella-dataplus.shinyapps.io/dataPlusv2/
 
-Here is the Shiny app website for the VCR locations extracted with **both** NER and regex: 
+Here is the Shiny app website for the VCR locations extracted with **both** NER and regex (the "clean" map): 
 https://yewonchang.shinyapps.io/manualmap/ 
 
 
@@ -53,15 +55,16 @@ ECBC-2025/
 
 ## Key Technologies
 
-- Python (NER): 
+- Python (Data cleaning + analysis): 
     - HuggingFace Transformers (```BART```)
-    - Custom entity extraction and label scoring
+    - Custom entity extraction via spaCy's NER model
+    - Computation of NER model's accuracy via spaCy's Scorer
+    - Refining NER output via regex 
 - R (Geocoding + Mapping):
     - ```tidygeocoder, leaflet, ggplot2, dplyr```
     - Shiny app deployment via ```shinyapps.io```
 - OCR / JSON cleanup
     - Manually reviewed and corrected OCR outputs from VCR
-
 
 ## Shiny Apps
 
@@ -70,8 +73,7 @@ ECBC-2025/
 Features: 
 - Interactive map of place references
 - Filters by year, entity type (GPE / LOC)
-- Integrated geocoordinates from ArcGIS API
-
+- For the "dirty" map: Integrated geocoordinates from ArcGIS API
 
 ## Historical Timeline
 
@@ -132,17 +134,6 @@ To launch the interactive map locally:
 shiny::runApp("shiny_app/final_app.R")
 ```
 
-Once running, the map will open in your browser with an animated timeline of entity mentions by year (1607–1623). 
-
-
----
-
-### If you read it this far, thank you so much! 
-
-<p align="center">
-  <img src="assets/cute_cat.jpg" alt="Cat" width="400"/>
-</p>
-
-
+Once running, the map will open in your browser with an animated timeline of entity mentions by year (1606–1626). 
 
 
