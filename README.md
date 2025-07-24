@@ -149,6 +149,6 @@ To launch the interactive map locally (ex. for the "dirty map"):
 shiny::runApp("shiny_app/dirty app.R")
 ```
 
-Once running, the map will open in your browser with an animated timeline of entity mentions by year.
+Once running, the map will open in your browser with an animated timeline of geographical entities. 
 
 
