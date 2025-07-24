@@ -56,11 +56,12 @@ ECBC-2025/
 │   ├── ner&scorer.py
 │   └── ner_and_labels_frequencies.py
 │
-├── shiny_app/                 # R files for "dirty map" app
-│   ├── final_app.R
-│   ├── final_map.Rmd
-│   └── VCR_1622_map.png
-│   └── 1622 map.R             # Standalone script for 1622 map plot
+├── shiny_app/                 # R files for apps
+│   └── 1622 dirty map.R             # Standalone script for 1622 map plot
+│   ├── VCR_1622_dirty_map.png
+│   ├── clean map.R                  
+│   ├── dirty app.R
+│   └── dirty_map.Rmd
 │
 ├── rsconnect/                 # Deployment configs for shinyapps.io
 │
