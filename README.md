@@ -89,7 +89,7 @@ ECBC-2025/
 - Filters by year, entity type (GPE / LOC)
 - Integrated geocoordinates from ArcGIS API
 
-"Clean" Map Features
+"Clean" Map Features:
 - Interactive map of key place references and their mention density per year
 - Filters by year
 
