@@ -35,7 +35,6 @@ ECBC-2025/
 │   ├── ScorerPipeline.py
 │
 ├── cleanmap/        # Python code for preparing location mention density data for map; R files for "clean map" app
-│   ├── App.R
 │   ├── CombineCSVs.py
 │   ├── Combined.csv
 │   ├── Coordinates.csv
