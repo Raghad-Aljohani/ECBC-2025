@@ -95,7 +95,7 @@ ECBC-2025/
 
 ## Historical Timeline
 
-| VCR Section | Assigned Year for "Dirty Map" | Justification                                                                            |
+| VCR Section | "Dirty Map" Assinged Year     | Justification                                                                            |
 | ----------- | ----------------------------- | ---------------------------------------------------------------------------------------- |
 | Section 1   | 1606                          | Royal Charter granted to Virginia Company; foundation of planning begins                 |
 | Section 2   | 1607                          | Jamestown founded                                                                        |
