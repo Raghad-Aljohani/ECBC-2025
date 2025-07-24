@@ -8,7 +8,7 @@ nlp = spacy.load("en_core_web_sm") #Load pipeline
 with open("/Users/yewonchang/Desktop/ManualMap/cleaned_VCRSection3.json", "r", encoding="utf-8") as f: #Use pre-existing VCR .json file 
     placeholder = json.load(f)
 
-with open("[B] OriginalPage.txt", "r", encoding="utf-8") as f: #Use text file of VCR page created by user 
+with open("OriginalPage.txt", "r", encoding="utf-8") as f: #Use text file of VCR page created by user 
     original = f.read() 
 
 chunk = nlp(original)
