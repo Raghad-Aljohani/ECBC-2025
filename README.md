@@ -34,7 +34,7 @@ ECBC-2025/
 │   ├── OriginalPage.txt
 │   ├── ScorerPipeline.py
 │
-├── cleanmap/        # Python code for preparing location mention density data for map
+├── cleanmap/        # Python code for preparing location mention density data for clean map
 │   ├── CombineCSVs.py
 │   ├── Combined.csv
 │   ├── Coordinates.csv
@@ -48,6 +48,12 @@ ECBC-2025/
 │   ├── cleaned_VCRSection2.json
 │   ├── ...
 │   └── cleaned_VCRSection7.json
+│
+├── dirty_NER_map/                      # Preparing geocoded data for dirty map 
+│   ├── all_entities.csv
+│   ├── app.R
+│   ├── geocoded_locations.csv
+│   └── prepare_geocoded_data.R
 │
 ├── scripts/                   # Python code for NER and text processing
 │   ├── extract_entities.py
