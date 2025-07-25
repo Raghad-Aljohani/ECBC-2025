@@ -73,9 +73,9 @@ def test2(goldStandard, posDict):
     return status
 
 if __name__ == "__main__":
-    with open("[B] AnnotatedPage.txt", "r", encoding="utf8") as f: 
+    with open("AnnotatedPage.txt", "r", encoding="utf8") as f: 
         annotated = f.read()
-    with open("[B] OriginalPage.txt", "r", encoding="utf8") as f: 
+    with open("OriginalPage.txt", "r", encoding="utf8") as f: 
         original = f.read()
     matches = re.findall(r'\{(.*?)\}', annotated) #Store all marked entities as matches
     matchSet = set(matches)
